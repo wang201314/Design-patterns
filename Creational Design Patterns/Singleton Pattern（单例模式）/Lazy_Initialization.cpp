@@ -48,5 +48,6 @@ Singleton::CGarbo Garbo;
 int main()
 {
     Singleton* newSingleton = Singleton::GetInstance();
+	Singleton* newSingleton1 = Singleton::GetInstance();
     return 0;
 }
