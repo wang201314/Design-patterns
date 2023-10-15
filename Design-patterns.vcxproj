@@ -98,9 +98,22 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="creational design patterns\singleton pattern（单例模式）\Eager_Initialization.cpp" />
-    <ClCompile Include="creational design patterns\singleton pattern（单例模式）\Lazy_Initialization.cpp" />
+    <ClCompile Include="Creation.h" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Visitor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Behavior.h" />
+    <ClInclude Include="Design-patterns.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
